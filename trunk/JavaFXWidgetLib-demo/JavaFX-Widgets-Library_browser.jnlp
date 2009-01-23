@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jnlp spec="1.0+" codebase="http://javafxwidgetlib.googlecode.com/svn/trunk/demo/" href="JavaFX-Widgets-Library_browser.jnlp">
+<jnlp spec="1.0+" codebase="http://javafxwidgetlib.googlecode.com/svn/trunk/JavaFXWidgetLib-demo/" href="JavaFX-Widgets-Library_browser.jnlp">
     <information>
         <title>JavaFX-Widgets-Library</title>
         <vendor>David MARTIN</vendor>
-        <homepage href="http://javafxwidgetlib.googlecode.com/svn/trunk/demo/"/>
+        <homepage href="http://javafxwidgetlib.googlecode.com/svn/trunk/JavaFXWidgetLib-demo/"/>
         <description>JavaFX-Widgets-Library</description>
         <offline-allowed/>
         <shortcut>
