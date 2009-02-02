@@ -28,7 +28,7 @@ public class SwingMenuItem extends SwingComponent {
         menuItem = new JMenuItem();
         menuItem.addActionListener(
         ActionListener{
-            public override function actionPerformed(e:ActionEvent) {
+            public override function actionPerformed(e: ActionEvent) {
                 println("menus: action");
                 action();
             }

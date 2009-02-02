@@ -66,7 +66,6 @@ public abstract class AbstractChartFX extends CustomNode {
 
     public var values : DatasetValue[]; // to be overridden in subclasses
 
-
     /** functions... */
     protected abstract function getDataset() : Dataset;
 
@@ -87,7 +86,7 @@ public abstract class AbstractChartFX extends CustomNode {
                   this.dimension.height,
                   this.dimension.width,
                   this.dimension.height,
-            true,//boolean useBuffer
+            true, //boolean useBuffer
             properties,
             save,
             print,
