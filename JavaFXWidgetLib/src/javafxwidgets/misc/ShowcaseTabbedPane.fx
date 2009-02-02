@@ -10,9 +10,8 @@ import javafx.ext.swing.SwingLabel;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-
 Stage {
-    title: "Tabbed Pane"
+    title: "Tabbed Pane demo"
     scene: Scene {
         width: 300
         height: 150
@@ -20,7 +19,7 @@ Stage {
             width: 300
             height: 150
 
-            tabs: for(n in [1..5]) SwingTabbedPane.SwingTab{
+            tabs: for(n in [1..5]) SwingTabbedPane.SwingTab {
                 title: "Tab: {n}"
                 content: SwingLabel {
                    text:"Label {n}"

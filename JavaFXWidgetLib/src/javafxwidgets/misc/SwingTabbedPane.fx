@@ -9,7 +9,6 @@ package javafxwidgets.misc;
 /**
  * @author David MARTIN
  */
-
 import javafx.ext.swing.*;
 import javax.swing.JComponent;
 import javax.swing.JTabbedPane;
@@ -19,21 +18,21 @@ public class SwingTab {
     public var content: SwingComponent;
 }
 
-public class SwingTabbedPane extends SwingComponent{
+public class SwingTabbedPane extends SwingComponent {
 
     var tabbedPane: JTabbedPane;
 
     var updateComponentFlag: Boolean = false;
 
-    public var selectedIndex: Integer = -1 on replace{
-        if( not updateComponentFlag){
-            if((-1 < selectedIndex) and ( selectedIndex  < tabbedPane.getTabCount() )){
+    public var selectedIndex: Integer = -1 on replace {
+        if (not updateComponentFlag) {
+            if ((-1 < selectedIndex) and ( selectedIndex  < tabbedPane.getTabCount())) {
                 tabbedPane.setSelectedIndex(selectedIndex);
             }
         }
     };
 
-    public var tabs: SwingTab[] on replace oldValue[lo..hi] = newVals{
+    public var tabs: SwingTab[] on replace oldValue[lo..hi] = newVals {
         for (tab in oldValue[lo..hi]){
             tabbedPane.remove(tab.content.getJComponent().getParent());
         }
@@ -47,13 +46,14 @@ public class SwingTabbedPane extends SwingComponent{
 
         tabbedPane.addChangeListener(
             javax.swing.event.ChangeListener{
-                override function stateChanged(e: javax.swing.event.ChangeEvent){
+                override function stateChanged(e: javax.swing.event.ChangeEvent) {
                     updateComponentFlag = true;
                     selectedIndex = tabbedPane.getSelectedIndex();
                     updateComponentFlag = false;
                 }
             }
         );
+
         return tabbedPane;
     }
 
