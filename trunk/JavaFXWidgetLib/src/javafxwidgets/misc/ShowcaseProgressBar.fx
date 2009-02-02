@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 import javafxwidgets.misc.SwingProgressBar;
 
 /**
- * @author E003530
+ * @author David MARTIN
  */
 
 var progress = 0;
